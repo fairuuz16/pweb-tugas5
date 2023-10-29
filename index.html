@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Vue Project</title>
+        <script src = "https://unpkg.com/vue@3"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Kalkulator</h1>
+        <div id="app">
+            <input v-model="var1" type="number">
+            <input v-model="var2" type="number"><br>
+            <button v-on:click="add">+</button>
+            <button v-on:click="subtract">-</button>
+            <button v-on:click="multiply">*</button>
+            <button v-on:click="divide">/</button><br></br>
+            Hasil: {{ hasil }}
+        </div>
+        <script src = "app.js"></script>
+    </body>
+</html>
